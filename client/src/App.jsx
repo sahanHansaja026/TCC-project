@@ -12,7 +12,7 @@ import ChatBot from "./Pages/chatbot";
 const App = () => {
   const location = useLocation();
 
-  const noNavBarPaths = ['/login','/signup'];
+  const noNavBarPaths = ['/','/signup'];
 
 
 
@@ -22,7 +22,7 @@ const App = () => {
       <Routes>
         <Route exact path="/pdf" element={<PDF />} />
         <Route exact path="/chatbot" element={<ChatBot />} />
-        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/" element={<Login />} />
         <Route exact path="/signup" element={<Register />} />
         <Route exact path="/home" element={<Home />} />
       </Routes>
